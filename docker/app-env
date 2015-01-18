@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
+
+cat <<"EOF"
+export REDIS_HOST=$ADDON_REDIS_LINK_PORT_6379_TCP_ADDR
+export REDIS_PORT=$ADDON_REDIS_LINK_PORT_6379_TCP_PORT
+EOF

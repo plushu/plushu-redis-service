@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
+
+printf '\n-v %q %q\n' "$1/data:/data" "$(<"$1/docker/IMAGE")"

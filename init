@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
+
+mkdir -p "$1/data"
